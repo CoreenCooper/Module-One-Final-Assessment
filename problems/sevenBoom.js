@@ -6,11 +6,11 @@
  * @returns {number[]} - An array matching the pattern described above
  */
 function sevenBoom(num) {
-  let newArr = [];
+  let newArr = []; // const is the more preferred because the address of the array does not change // ex. like a house and people enter and leave but the house remains at the same address 
   for (let i = 1; i <= num; i++) {
-    if (i % 7 === 0) {
+    if (i % 7 === 0) { // or // if(i % 7 === 0 || i.toString().includes("7"))
       newArr.push("BOOM");
-    } else if (i.toString().includes("7")) {
+    } else if (i.toString().includes("7")) { 
       newArr.push("BOOM");
     } else {
       newArr.push(i);
